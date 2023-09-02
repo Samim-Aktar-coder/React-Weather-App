@@ -3,9 +3,11 @@
 :root {
   --bg-primary: #1e1f24;
   --bg-secondary: #2e2e38;
-  --main-color: #c8e7e9;
+  --main-color: #c2f3f6;
+  --main-color-alt: #d7f0f2;
   --color-white: #fff;
   --color-black: #000;
+  --border-color:#3f3f48 ;
   --border-radius: .8rem;
 }
 
