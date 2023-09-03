@@ -69,7 +69,6 @@ export default function Header() {
     }
   };
 
-
   const handleChange = (e) => {
     setCity(e.target.value);
   };

@@ -21,7 +21,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(143deg, rgba(166, 244, 249, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(143deg, var(--main-color) 0%, rgba(0, 0, 0, 1) 100%);
   padding-block: 2rem;
   color: var(--color-white);
 }
@@ -29,3 +29,13 @@ body {
 /* body.light {
   
 } */
+
+::-webkit-scrollbar{
+  width: 7px;
+  background-color: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+  border-radius: 2rem;
+}

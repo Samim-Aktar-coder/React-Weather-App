@@ -48,8 +48,6 @@ function DataProvider({ children }) {
       });
   }, []);
 
-  
-
   return (
     <DataContext.Provider value={{ state, dispatch }}>
       {children}
