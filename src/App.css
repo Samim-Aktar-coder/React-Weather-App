@@ -6,3 +6,17 @@
   padding: 1rem;
   height: 90vh;
 }
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.main-left {
+  flex-basis: 64%;
+}
+
+.main-right {
+  flex-basis: 34%;
+}

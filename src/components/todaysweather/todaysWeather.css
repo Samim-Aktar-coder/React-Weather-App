@@ -1,0 +1,64 @@
+.today-weather {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.todays-weather-data {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.weather-img {
+    flex-basis: 20%;
+    width: 100%;
+    margin-top: -1.8rem;
+}
+
+.todays-weather-data .weather-data-item:nth-child(3) {
+    flex-basis: 20%;
+}
+
+
+.weather-data-item h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.weather-data-item span {
+    font-size: .7rem;
+    font-weight: 400;
+    margin-left: .1rem;
+}
+
+.weather-data-item p {
+    font-size: .75rem;
+}
+
+.todays-weather-details{
+    width: 2rem;
+    min-width: 100%;
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    /* border: 1px solid white; */
+}
+
+.todays-weather-details::-webkit-scrollbar{
+    display: none;
+}
+
+.detail-card{
+    background-color: var(--main-color);
+    color: var(--color-white);
+    text-align: center;
+    border-radius: var(--border-radius);
+    padding: .8rem .3rem;
+}
+
+.detail-card p{
+    font-size: .9rem;
+    font-weight: 600;
+
+}

@@ -1,5 +1,7 @@
 import './App.css';
 import Header from './components/header/Header';
+import TodaysWeather from './components/todaysweather/TodaysWeather';
+import DataProvider from './data/DataProvider';
 // import { createClient } from 'pexels';
 // const client = createClient('GvRNfxvaY8yJdqSFPvICFLOrcgtMrKUn7vsR2RgaT8STXk6kUkLKtfPx');
 
@@ -8,12 +10,18 @@ import Header from './components/header/Header';
 
 function App() {
   return (
-    <div className='container'>
-      <Header />
-      <div className="flex">
+    <DataProvider>
 
+      <div className='container'>
+        <Header />
+        <div className="main">
+          <div className="main-left">
+            <TodaysWeather />
+          </div>
+          <div className="main-right"></div>
+        </div>
       </div>
-    </div>
+    </DataProvider>
   );
 }
 
