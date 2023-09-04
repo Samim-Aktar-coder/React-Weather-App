@@ -42,7 +42,6 @@
     display: flex;
     gap: 1rem;
     overflow-x: scroll;
-    /* border: 1px solid white; */
 }
 
 .todays-weather-details::-webkit-scrollbar{
@@ -55,6 +54,10 @@
     text-align: center;
     border-radius: var(--border-radius);
     padding: .8rem .3rem;
+}
+
+.detail-card img{
+    cursor: pointer;
 }
 
 .detail-card p{

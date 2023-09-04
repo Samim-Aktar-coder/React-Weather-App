@@ -101,7 +101,7 @@ export default function Header() {
         <div className='profile'>
           <img src={profileImg} alt='' className='profile-img' />
           <div className='profile-data'>
-            <p>Hi Everybody</p>
+            <p>Hello Friends...</p>
             <h3>
               {day}, {date} {month}, {year}
             </h3>

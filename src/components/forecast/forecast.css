@@ -1,0 +1,105 @@
+.forecast-container {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    max-height: 20rem;
+}
+
+.forecast-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.forecast-heading h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.toggle-days {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bg-primary);
+    padding: .5rem .8rem;
+    border-radius: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-days p {
+    font-size: .7rem;
+    font-weight: 500;
+    z-index: 5;
+    color: var(--main-color-alt);
+}
+
+.toggle-days p:first-child {
+    color: black;
+}
+
+.toggle-days span {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+    background-color: var(--main-color-alt);
+    width: 45%;
+    height: 80%;
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.toggle-days.seven span {
+    left: 50%;
+}
+
+.toggle-days.seven p:first-child {
+    color: var(--main-color-alt);
+}
+
+.toggle-days.seven p:nth-child(2) {
+    color: black;
+}
+
+.forecast-list {
+    max-height: 15rem;
+    overflow: auto;
+}
+
+.forecast-list::-webkit-scrollbar{
+    width: 4px;
+}
+
+.forecast-day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-primary);
+    margin-block: .5rem;
+    border-radius: .8rem;
+    padding: .5rem;
+}
+
+.forecast-day-left {
+    display: flex;
+    align-items: center;
+}
+
+.forecast-day-left img {
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.forecast-day-left p {
+    font-size: .75rem;
+}
+
+.forecast-day-left .slash {
+    margin-inline: .2rem;
+}
+
+.forecast-day-right p {
+    font-size: .75rem;
+}

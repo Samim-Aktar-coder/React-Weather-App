@@ -42,6 +42,7 @@ export default function TodaysWeather() {
               <DetailCard
                 key={detail.time}
                 time={detail.time.slice(-5)}
+                weatherText={detail.condition.text}
                 icon={detail.condition.icon}
                 tempC={detail.temp_c}
                 tempF={detail.temp_f}

@@ -30,12 +30,12 @@ body {
   
 } */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 7px;
   background-color: var(--bg-primary);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-radius: 2rem;
 }
