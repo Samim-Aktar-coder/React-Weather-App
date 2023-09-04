@@ -36,7 +36,7 @@
 }
 
 .toggle-days p:first-child {
-    color: black;
+    color: var(--color-black);
 }
 
 .toggle-days span {
@@ -60,7 +60,7 @@
 }
 
 .toggle-days.seven p:nth-child(2) {
-    color: black;
+    color: var(--color-black);
 }
 
 .forecast-list {
@@ -68,7 +68,7 @@
     overflow: auto;
 }
 
-.forecast-list::-webkit-scrollbar{
+.forecast-list::-webkit-scrollbar {
     width: 4px;
 }
 

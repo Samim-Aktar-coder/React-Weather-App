@@ -3,6 +3,9 @@ import "./todaysWeather.css";
 import { DataContext } from "../../data/DataProvider";
 import DetailCard from "./DetailCard";
 import MyLoader from "../../data/ContentLoader";
+import { TfiMoreAlt } from "react-icons/tfi";
+import { Tooltip } from "react-tooltip";
+import { Link } from "react-router-dom";
 
 export default function TodaysWeather() {
   const { state } = useContext(DataContext);
@@ -35,6 +38,22 @@ export default function TodaysWeather() {
               </h2>
               <p>Temperature</p>
             </div>
+            <Link to='/weather-details'>
+              <TfiMoreAlt
+                data-tooltip-id='more'
+                data-tooltip-content='More about todays weather'
+                data-tooltip-place='top'
+              />
+            </Link>
+
+            <Tooltip
+              id='more'
+              style={{
+                backgroundColor: "#00ab9a",
+                color: "#fff",
+                borderRadius: ".5rem",
+              }}
+            />
           </div>
 
           <div className='todays-weather-details'>
