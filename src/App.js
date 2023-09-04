@@ -1,31 +1,17 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Astronomy from './components/astronomy/Astronomy';
-import CityImage from './components/cityImage/CityImage';
-import Forecast from './components/forecast/Forecast';
-import Header from './components/header/Header';
-import Mapbox from './components/mapbox/Mapbox';
-import TodaysWeather from './components/todaysweather/TodaysWeather';
 import DataProvider from './data/DataProvider';
+import Main from './components/main/Main';
+import Layout from './components/main/Layout';
 
 function App() {
   return (
     <DataProvider>
-
-      <div className='container'>
-        <Header />
-        <div className="main">
-          <div className="main-left">
-            <TodaysWeather />
-            <CityImage />
-            <Astronomy />
-          </div>
-          <div className="main-right">
-            {/* <Mapbox /> */}
-            <Forecast/>
-          </div>
-        </div>
-      </div>
-
+      <Routes>
+        <Route path='/' element={<Layout />} >
+          <Route index element={<Main />} />
+        </Route>
+      </Routes>
     </DataProvider>
   );
 }
