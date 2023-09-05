@@ -39,3 +39,33 @@
 .main-right {
   flex-basis: 34%;
 }
+
+
+@media screen and (max-width:850px) {
+  .main {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .app-heading h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .app-heading p {
+    font-size: .85rem;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .app-heading h1 {
+    font-size: 2rem;
+    line-height:2.5rem;
+  }
+
+  .app-heading p {
+    font-size: .85rem;
+  }
+}

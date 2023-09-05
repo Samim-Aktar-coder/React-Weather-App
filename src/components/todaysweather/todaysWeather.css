@@ -20,9 +20,7 @@
     flex-basis: 20%;
 }
 
-
-
-.todays-weather-data svg{
+.todays-weather-data svg {
     position: absolute;
     top: .2rem;
     right: .5rem;
@@ -46,7 +44,7 @@
     font-size: .75rem;
 }
 
-.todays-weather-details{
+.todays-weather-details {
     width: 2rem;
     min-width: 100%;
     display: flex;
@@ -54,11 +52,11 @@
     overflow-x: scroll;
 }
 
-.todays-weather-details::-webkit-scrollbar{
+.todays-weather-details::-webkit-scrollbar {
     display: none;
 }
 
-.detail-card{
+.detail-card {
     background-color: var(--main-color);
     color: var(--color-white);
     text-align: center;
@@ -66,12 +64,43 @@
     padding: .8rem .3rem;
 }
 
-.detail-card img{
+.detail-card img {
     cursor: pointer;
 }
 
-.detail-card p{
+.detail-card p {
     font-size: .9rem;
     font-weight: 600;
 
+}
+
+@media screen and (max-width:650px) {
+    .todays-weather-details {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .todays-weather-data {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .todays-weather-data .weather-data-item:nth-child(2) {
+        flex-basis: 65%;
+        order: 2;
+    }
+    .todays-weather-data .weather-data-item:nth-child(3) {
+        order: 1;
+    }
+
+    .weather-data-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .weather-img {
+        flex-basis: 20%;
+        width: 100%;
+        margin-top: -1.5rem;
+    }
 }

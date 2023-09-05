@@ -38,3 +38,15 @@
     font-size: 1rem;
     font-weight: 400;
 }
+
+
+@media screen and (max-width:850px) {
+    .astronomy-container {
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:550px) {
+    .astronomy-container {
+        flex-direction: column;
+    }
+}

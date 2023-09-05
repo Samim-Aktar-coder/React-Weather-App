@@ -162,3 +162,30 @@
 .toggle-temp-unit.fahrenheit p:nth-child(2) {
     color: var(--bg-primary);
 }
+
+@media screen and (max-width:650px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .toggle-theme {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .right {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .input-control{
+        flex-basis: 100%;
+    }
+}

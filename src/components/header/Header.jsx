@@ -12,6 +12,8 @@ export default function Header() {
   const [theme, setTheme] = useState("");
   const [tempUnit, setTempUnit] = useState("");
 
+  const weatherApiKey = process.env.REACT_APP_WEATHER_API_KEY;
+
   const { state, dispatch } = useContext(DataContext);
 
   let dateObj = new Date();
@@ -78,7 +80,7 @@ export default function Header() {
 
     await axios
       .get(
-        `https://api.weatherapi.com/v1/forecast.json?key=eeb723d55d594056a3a165917232508&q=${city}&aqi=yes&days=8`
+        `https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=${city}&aqi=yes&days=8`
       )
       .then((data) => {
         dispatch({

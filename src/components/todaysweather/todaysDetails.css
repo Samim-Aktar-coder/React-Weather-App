@@ -75,6 +75,7 @@
     width: 11rem;
     opacity: 0;
     pointer-events: none;
+    transition: .3s;
 }
 
 .air-quality-info::after {
@@ -101,4 +102,24 @@
 .air-quality svg:hover+.air-quality-info::after {
     opacity: 1;
     pointer-events: initial;
+}
+
+
+@media screen and (max-width:650px) {
+    .air-quality-info {
+        right: 0%;
+        bottom: 1.8rem;
+    }
+
+    .air-quality-info::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .details-container {
+        flex-direction: column;
+    }
+
+
 }

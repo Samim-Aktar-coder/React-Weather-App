@@ -9,19 +9,20 @@ export default function CityImage() {
 
   let current = state.data.current;
 
-  const client = createClient(
-    "GvRNfxvaY8yJdqSFPvICFLOrcgtMrKUn7vsR2RgaT8STXk6kUkLKtfPx"
-  );
+  const imageApiKey = process.env.REACT_APP_CITY_IMAGE_API_KEY;
+
+  const client = createClient(imageApiKey);
   let query = state.city;
 
   useEffect(() => {
     client.photos.search({ query }).then((photo) => {
       setCityImgUrl(
-        photo.photos[Math.floor(Math.random() * photo.photos.length)].src
-          .landscape
+        photo.photos[Math.floor(Math.random() * photo.photos.length)].src.landscape
       );
     });
   }, [query]);
+
+  console.log(cityImgUrl)
 
   return (
     current && (

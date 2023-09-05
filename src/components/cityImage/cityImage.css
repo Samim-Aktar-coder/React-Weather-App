@@ -33,9 +33,24 @@
 .city-weather-item {
     flex: 1;
     text-align: center;
+    color: white;
 }
 
 .city-weather-item h4 {
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+@media screen and (max-width:550px) {
+
+    .city-weather-data {
+        left: .5rem;
+        bottom: .5rem;
+        padding-block: .8rem;
+    }
+
+    .city-weather-data .city-weather-item:nth-child(3),
+    .city-weather-data .city-weather-item:nth-child(4) {
+        display: none;
+    }
 }
