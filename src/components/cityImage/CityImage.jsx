@@ -22,7 +22,6 @@ export default function CityImage() {
     });
   }, [query]);
 
-  console.log(cityImgUrl)
 
   return (
     current && (
