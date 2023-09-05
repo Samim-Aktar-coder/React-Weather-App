@@ -22,7 +22,7 @@ export default function TodaysWeather() {
         <div className='today-weather'>
           <div className='todays-weather-data'>
             <img
-              src='//cdn.weatherapi.com/weather/64x64/day/119.png'
+              src={current.condition.icon}
               alt='weather-img'
               className='weather-img'
             />
