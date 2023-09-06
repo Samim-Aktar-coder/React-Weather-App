@@ -12,6 +12,15 @@ export default function Layout() {
       </div>
       <Header />
       <Outlet />
+      <div className='github-link'>
+        <a
+          href='https://github.com/Samim-Aktar-coder/React-Weather-App'
+          target='_blank'
+        >
+          Open source code
+        </a>{" "}
+        by Samim
+      </div>
     </div>
   );
 }

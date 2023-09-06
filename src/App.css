@@ -40,6 +40,21 @@
   flex-basis: 34%;
 }
 
+.github-link {
+  color: var(--color-white);
+  font-size: 1.05rem;
+  padding-block: 2rem 1rem;
+  text-align: center;
+}
+
+.github-link a {
+  text-decoration: none;
+}
+
+.github-link a:hover {
+  text-decoration: underline;
+}
+
 
 @media screen and (max-width:850px) {
   .main {
@@ -62,10 +77,14 @@
 @media screen and (max-width:350px) {
   .app-heading h1 {
     font-size: 2rem;
-    line-height:2.5rem;
+    line-height: 2.5rem;
   }
 
   .app-heading p {
     font-size: .85rem;
+  }
+
+  .github-link {
+    font-size: .9rem;
   }
 }
