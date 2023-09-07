@@ -1,9 +1,6 @@
 import React from "react";
 import "../../App.css";
-import TodaysWeather from '../todaysweather/TodaysWeather'
-import CityImage from '../cityImage/CityImage'
-import Forecast from '../forecast/Forecast'
-import Astronomy from '../astronomy/Astronomy'
+import { TodaysWeather, CityImage, Forecast, Astronomy } from "../";
 
 export default function Main() {
   return (

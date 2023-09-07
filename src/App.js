@@ -1,9 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import DataProvider from './data/DataProvider';
-import Main from './components/main/Main';
-import Layout from './components/main/Layout';
-import TodaysDetails from './components/todaysweather/TodaysDetails';
+import {Main,Layout,TodaysDetails} from './components'
 
 function App() {
   return (
