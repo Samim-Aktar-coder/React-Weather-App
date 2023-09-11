@@ -11,8 +11,12 @@ I created the Weather app using React JS.
 Tech stack I use to build this app:
 
 - REACT HOOKS
+- REACT ICONS
+- REACT TOOLTIP
+- REACT ROUTER DOM
 - JSX
 - AXIOS
+- API
 - CSS
 
 ## 🙋‍♂️ Author
