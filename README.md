@@ -1,4 +1,4 @@
-[![MasterHead](https://raw.githubusercontent.com/Samim-Aktar-coder/React-Weather-App/main/Github%20Banner.png)](https://climate-canvas.netlify.app)
+[![MasterHead](https://image-link-website.netlify.app/img/react-weather-app.png)](https://climate-canvas.netlify.app)
 
 ### Live: [Click Here](https://climate-canvas.netlify.app)
 
@@ -21,7 +21,7 @@ Tech stack I use to build this app:
 
 ## 🙋‍♂️ Author
 
-- [@SamimAktar](https://github.com/Samim-Aktar-coder)
+- [@SamimAktar](https://github.com/samimaktar-coder)
 
 ## Installation
 
