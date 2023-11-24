@@ -25,11 +25,11 @@ export default function Forecast() {
       <div className='forecast-container'>
         <div className='forecast-heading'>
           <h2>Forecast</h2>
-          <div className={`toggle-days ${days}`} onClick={toggleDays}>
+          {/* <div className={`toggle-days ${days}`} onClick={toggleDays}>
             <p>3 days</p>
             <p>7 days</p>
             <span></span>
-          </div>
+          </div> */}
         </div>
 
         <div className='forecast-list'>
